@@ -1,12 +1,13 @@
 // Exo 1 création tableau
-let tabExo = ['Zulma', 'coding16', 7, 21, 'true'];
+let prenom = "Zulma"
+let tabExo = ['coding16', prenom, 7, 21, true];
 console.log(tabExo);
 
 // Exo 2 affiche longueur du tableau
 console.log(tabExo.length);
 
 // Exo 3 retire dernier élément du tableau
-let last = (tabExo.pop());
+tabExo.pop();
 console.log(tabExo);
 
 // Exo 4 retire premier élément du tableau
@@ -22,25 +23,27 @@ tabExo.unshift('on ne lâche rien', 2021, 'est à nous');
 console.log(tabExo);
 
 // Exo 7 retourne tableau
-tabExo.sort();
+tabExo.reverse();
 console.log(tabExo);
 
 // exo 8
-let boite = [' jeux'];
+let boite = [ ];
 boite.push(' dvd');
-alert(boite);
+boite.push(' jeux')
+alert(`${boite} 1er alert`);
 
 boite.unshift('photos');
-alert(boite);
+alert(`${boite} 2eme alert`);
 
 boite.push(' documents', ' vêtements', ' chaussures');
-alert(boite);
+alert(`${boite} 3eme alert`);
 
 boite.splice(0, 3);
 
 boite.push('souvenirs');
 alert(boite.length);
 
-boite.splice(-1, 2);
-boite.splice(0, 3);
+boite.splice(-2, 2);
+boite.splice(0, 2);
 alert(boite);
+console.log(boite.length);
